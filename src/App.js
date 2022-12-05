@@ -11,8 +11,9 @@ function App() {
   const skills = useRef(null);
   const home = useRef(null);
   const work = useRef(null);
+  const contacts = useRef(null);
 
-  const sectionRefs = [home, about, skills, work];
+  const sectionRefs = [home, about, skills, work, contacts];
 
   const activeSection = useScrollSpy({
     sectionElementRefs: sectionRefs,

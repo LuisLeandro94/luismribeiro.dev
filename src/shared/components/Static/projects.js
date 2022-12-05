@@ -12,7 +12,7 @@ export const Projects = [
       'https://images.unsplash.com/photo-1664575196412-ed801e8333a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80',
   },
   {
-    name: 'Website1',
+    name: 'Website2',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
     languages: ['HTML5', 'CSS', 'JS'],
@@ -21,7 +21,7 @@ export const Projects = [
       'https://images.unsplash.com/photo-1664575196412-ed801e8333a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80',
   },
   {
-    name: 'Website1',
+    name: 'Website3',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
     languages: ['HTML5', 'CSS', 'JS'],
@@ -30,7 +30,7 @@ export const Projects = [
       'https://images.unsplash.com/photo-1664575196412-ed801e8333a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80',
   },
   {
-    name: 'Website1',
+    name: 'Website4',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
     languages: ['HTML5', 'CSS', 'JS'],
@@ -38,7 +38,7 @@ export const Projects = [
     image: '../../assets/IMG_0232.JPG.png',
   },
   {
-    name: 'Website1',
+    name: 'Website5',
     description:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
     languages: ['HTML5', 'CSS', 'JS'],

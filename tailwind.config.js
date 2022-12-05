@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         pattern:
-          "url('/src/shared/assets/pattern_hexagon-1_0.5_2_0-0_0_1__ffffff_009485.png')",
+          "url('/src/shared/assets/pattern_geometric-5_1_7_0-0_100_1__fdfffc_363636.png')",
         dots: "url('/src/shared/assets/download.png')",
       },
       backgroundSize: {

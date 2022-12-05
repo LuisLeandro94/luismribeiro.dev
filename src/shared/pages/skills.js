@@ -29,8 +29,14 @@ const Skills = ({ skills }) => {
           </div>
         </div>
         <div className='w-1/2'>
-          <div className='bg-dots p-4 bg-100 bg-no-repeat mr-none'>
-            <img src={Image} alt='Luis Ribeiro' className='w-5/6 mr-none' />
+          <div className='bg-dots w-full h-full p-4 bg-100 bg-no-repeat mr-none'>
+            <div className='w-full h-full m-0 p-0 clip-right flex justify-center items-center overflow-hidden'>
+              <img
+                src={Image}
+                alt='Luis Ribeiro'
+                className='min-w-full min-h-full shrink-0'
+              />
+            </div>
           </div>
         </div>
       </div>

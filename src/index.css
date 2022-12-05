@@ -7,5 +7,17 @@
 }
 
 .App-navigation-item--active {
-    color: #0E9488;
+    color: #0E9488 !important;
+}
+
+.App-navigation-item {
+    color: #ffffff;
+}
+
+.clip-right {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 84%);
+}
+
+.clip-left {
+    clip-path: polygon(0 0, 100% 0%, 100% 84%, 0 100%);
 }
