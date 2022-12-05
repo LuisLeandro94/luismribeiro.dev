@@ -6,7 +6,17 @@ import Home from './home';
 import Skills from './skills';
 import Work from './work';
 
-const Layout = ({ active, setActive, sectionRefs }) => {
+const Layout = ({
+  active,
+  setActive,
+  sectionRefs,
+  title,
+  setTitle,
+  text,
+  setText,
+  showAlert,
+  setShowAlert,
+}) => {
   return (
     <>
       <ScrollButton active={active} setActive={setActive} />
@@ -14,7 +24,15 @@ const Layout = ({ active, setActive, sectionRefs }) => {
       <About about={sectionRefs[1]} />
       <Skills skills={sectionRefs[2]} />
       <Work work={sectionRefs[3]} />
-      <Contact contacts={sectionRefs[4]} />
+      <Contact
+        title={title}
+        setTitle={setTitle}
+        text={text}
+        setText={setText}
+        showAlert={showAlert}
+        setShowAlert={setShowAlert}
+        contacts={sectionRefs[4]}
+      />
     </>
   );
 };

@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import useScrollSpy from 'react-use-scrollspy';
+import Alert from './shared/components/Alert/alert';
 import Footer from './shared/components/Footer/footer';
 import Header from './shared/components/Header/header';
 import Layout from './shared/pages/layout';
@@ -7,6 +8,9 @@ import Layout from './shared/pages/layout';
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [showGoTop, setshowGoTop] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
+  const [title, setTitle] = useState('');
+  const [text, setText] = useState({});
   const about = useRef(null);
   const skills = useRef(null);
   const home = useRef(null);
@@ -38,7 +42,14 @@ function App() {
   return (
     <div className='min-h-screen h-full bg-gradient-to-b from-neutral-900 to-neutral-700 '>
       <Header sectionRefs={sectionRefs} activeSection={activeSection} />
+      {showAlert && <Alert title={title} text={text} />}
       <Layout
+        title={title}
+        setTitle={setTitle}
+        text={text}
+        setText={setText}
+        showAlert={showAlert}
+        setShowAlert={setShowAlert}
         active={showGoTop}
         setActive={setshowGoTop}
         sectionRefs={sectionRefs}
