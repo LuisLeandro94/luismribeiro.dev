@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.isActive {
+    color: #028080;
+}
+
+.App-navigation-item--active {
+    color: #0E9488;
+}
