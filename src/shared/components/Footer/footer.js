@@ -1,10 +1,8 @@
 import React from 'react';
-import {
-  AiFillGithub,
-  AiFillInstagram,
-  AiFillLinkedin,
-  AiFillTwitterCircle,
-} from 'react-icons/ai';
+import Github from '../Static/Github';
+import Instagram from '../Static/Instagram';
+import Linkedin from '../Static/Linkedin';
+import Twitter from '../Static/Twitter';
 
 const Footer = () => {
   return (
@@ -13,17 +11,33 @@ const Footer = () => {
         LuisRibeiroDev
       </span>
       <ul className='list-none flex flex-row justify-center pb-5'>
-        <a href='/' className='px-2'>
-          <AiFillGithub className='text-neutral-500 hover:text-teal-600 transition-colors duration-300 text-4xl' />
+        <a
+          href='https://github.com/LuisLeandro94'
+          rel='noopener noreferrer'
+          target='_blank'
+          className='px-2 icon'>
+          <Github />
         </a>
-        <a href='/' className='px-2'>
-          <AiFillLinkedin className='text-neutral-500 hover:text-teal-600 transition-colors duration-300 text-4xl' />
+        <a
+          href='https://www.linkedin.com/in/luisleandro94/'
+          rel='noopener noreferrer'
+          target='_blank'
+          className='px-2 icon'>
+          <Linkedin />
         </a>
-        <a href='/' className='px-2'>
-          <AiFillTwitterCircle className='text-neutral-500 hover:text-teal-600 transition-colors duration-300 text-4xl' />
+        <a
+          href='https://twitter.com/jsdevmaycry'
+          rel='noopener noreferrer'
+          target='_blank'
+          className='px-2 icon'>
+          <Twitter />
         </a>
-        <a href='/' className='px-2'>
-          <AiFillInstagram className='text-neutral-500 hover:text-teal-600 transition-colors duration-300 text-4xl' />
+        <a
+          href='https://www.instagram.com/sirluisdealvalade/'
+          rel='noopener noreferrer'
+          target='_blank'
+          className='px-2 icon'>
+          <Instagram />
         </a>
       </ul>
       <span className='text-white'>

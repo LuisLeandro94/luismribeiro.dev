@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import useScrollSpy from 'react-use-scrollspy';
+import sanityClient from './client';
 import Alert from './shared/components/Alert/alert';
 import Footer from './shared/components/Footer/footer';
 import Header from './shared/components/Header/header';
@@ -16,7 +17,6 @@ function App() {
   const home = useRef(null);
   const work = useRef(null);
   const contacts = useRef(null);
-
   const sectionRefs = [home, about, skills, work, contacts];
 
   const activeSection = useScrollSpy({

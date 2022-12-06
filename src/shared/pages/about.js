@@ -9,13 +9,13 @@ const About = ({ about }) => {
       className='h-screen w-full py-20 px-32 flex flex-row justify-center align-middle'
       ref={about}>
       <div className='w-1/2'>
-        <AnimationOnScroll animateIn='animate__fadeInLeft'>
-          <div className='bg-dots h-full p-4 bg-100 bg-no-repeat mr-none w-11/12'>
+        <AnimationOnScroll animateIn='animate__fadeInLeft' className='h-full'>
+          <div className='bg-dots h-full p-4 bg-100 bg-no-repeat mr-none w-4/5'>
             <div className='w-full h-full m-0 p-0 clip-left flex justify-center items-center overflow-hidden'>
               <img
                 src={Image}
                 alt='Luis Ribeiro'
-                className='min-w-full min-h-full shrink-0'
+                className='min-w-full min-h-full shrink-0 object-cover'
               />
             </div>
           </div>
@@ -37,7 +37,10 @@ const About = ({ about }) => {
           </p>
         </AnimationOnScroll>
         <AnimationOnScroll animateIn='animate__fadeInRight'>
-          <Button text='Download CV' />
+          <Button
+            text='Download CV'
+            onClick={() => window.open('../assets/luis.resume.pdf')}
+          />
         </AnimationOnScroll>
       </div>
     </div>

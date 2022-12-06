@@ -35,13 +35,15 @@ const Skills = ({ skills }) => {
           </div>
         </div>
         <div className='w-1/2'>
-          <AnimationOnScroll animateIn='animate__slideInRight'>
-            <div className='bg-dots h-full p-4 bg-100 bg-no-repeat mr-none w-11/12'>
+          <AnimationOnScroll
+            animateIn='animate__slideInRight'
+            className='h-full'>
+            <div className='bg-dots h-full p-4 bg-100 bg-no-repeat mr-none w-4/5'>
               <div className='w-full h-full m-0 p-0 clip-right flex justify-center items-center overflow-hidden'>
                 <img
                   src={Image}
                   alt='Luis Ribeiro'
-                  className='min-w-full min-h-full shrink-0'
+                  className='min-w-full min-h-full shrink-0 object-cover'
                 />
               </div>
             </div>
