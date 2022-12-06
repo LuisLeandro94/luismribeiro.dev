@@ -42,7 +42,9 @@ function App() {
   return (
     <div className='min-h-screen h-full bg-gradient-to-b from-neutral-900 to-neutral-700 '>
       <Header sectionRefs={sectionRefs} activeSection={activeSection} />
-      {showAlert && <Alert title={title} text={text} />}
+      {showAlert && (
+        <Alert title={title} text={text} setShowAlert={setShowAlert} />
+      )}
       <Layout
         title={title}
         setTitle={setTitle}

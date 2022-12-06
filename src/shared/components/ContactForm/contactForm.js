@@ -1,3 +1,4 @@
+import emailjs from 'emailjs-com';
 import React, { useState } from 'react';
 import { validate } from '../../helpers/helper';
 import Alert from '../Alert/alert';
@@ -5,7 +6,9 @@ import Button from '../Button/button';
 import Input from '../Input/input';
 import TextArea from '../TextArea/textArea';
 
-const FORM_ENDPOINT = '';
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+const USER_ID = process.env.REACT_APP_USER_ID;
 
 const ContactForm = ({
   showAlert,
@@ -21,22 +24,42 @@ const ContactForm = ({
     e.preventDefault();
     const { name, email, message } = e.target.elements;
 
-    const errors = validate({ name, email, message });
+    let validateObject = {
+      from_name: name.value,
+      from_email: email.value,
+      message: message.value,
+    };
 
-    if (!errors) {
-      let conFom = {
-        name: name.value,
-        email: email.value,
-        message: message.value,
-      };
-      console.log(conFom);
-      setSubmitted(true);
+    const errors = validate(validateObject);
+    if (Object.keys(errors).length === 0) {
+      debugger;
+      console.log(SERVICE_ID, TEMPLATE_ID, USER_ID);
+      emailjs.send(SERVICE_ID, TEMPLATE_ID, validateObject, USER_ID).then(
+        (result) => {
+          console.log(result.text);
+          setTitle('Success');
+          setText({ name: 'Thank you for your contact!' });
+          setShowAlert(true);
+          setSubmitted(true);
+        },
+        (error) => {
+          console.log(error.text);
+          setTitle('Error');
+          setText({ name: 'Oops something went wrong!' });
+          setShowAlert(true);
+        }
+      );
+      debugger;
+      e.target.reset();
     } else {
-      console.log(errors);
-      setTitle('Validation error');
+      setTitle('Error');
       setText(errors);
       setShowAlert(true);
     }
+
+    setTimeout(() => {
+      setShowAlert(false);
+    }, 5000);
   };
 
   return (
