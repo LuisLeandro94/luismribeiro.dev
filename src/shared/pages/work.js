@@ -36,11 +36,11 @@ const Work = ({ work }) => {
 
   return (
     <div
-      className='h-screen w-full py-20 px-32 flex flex-row justify-center align-middle select-none'
+      className='lg:h-screen w-full items-center py-20 px-5 lg:px-32 flex flex-col lg:flex-row justify-center align-middle'
       ref={work}>
-      <div className='w-1/2 relative h-full'>
+      <div className='w-full lg:w-1/2 relative h-full'>
         <AnimationOnScroll animateIn='animate__slideInLeft' className='h-full'>
-          <div className='bg-dots h-full p-4 bg-100 bg-no-repeat m-0 w-4/5'>
+          <div className='bg-dots h-full p-4 bg-100 bg-no-repeat m-0 w-full lg:w-4/5'>
             <div className='w-full h-full m-0 p-0 clip-right flex justify-center items-center overflow-hidden'>
               <img
                 src={projects[currentProject]?.projectImage?.asset?.url}
@@ -50,8 +50,8 @@ const Work = ({ work }) => {
               <div
                 className={
                   currentProject === 0
-                    ? 'absolute w-11/12 h-full top-0 flex justify-end align-middle text-center items-center p-4 '
-                    : 'absolute w-11/12 h-full top-0 flex justify-between align-middle text-center items-center p-4 '
+                    ? 'absolute w-full lg:w-10/12 h-full top-0 flex justify-end align-middle text-center items-center p-4 '
+                    : 'absolute w-full lg:w-10/12 h-full top-0 flex justify-between align-middle text-center items-center p-4 '
                 }>
                 {currentProject !== 0 && (
                   <span className='w-1/6 text-center align-middle justify-center items-center flex right-0 bg-neutral-500 cursor-pointer'>
@@ -74,7 +74,7 @@ const Work = ({ work }) => {
           </div>
         </AnimationOnScroll>
       </div>
-      <div className='flex flex-col p-6 w-1/2 justify-center'>
+      <div className='flex flex-col p-6 w-full lg:w-1/2 justify-center lg:text-start text-center'>
         <AnimationOnScroll animateIn='animate__slideInRight'>
           <h2 className='text-3xl text-teal-600 font-bold pb-5'>Works</h2>
         </AnimationOnScroll>
@@ -90,7 +90,7 @@ const Work = ({ work }) => {
         </AnimationOnScroll>
 
         <AnimationOnScroll animateIn='animate__slideInRight'>
-          <div className='flex flex-row justify-start w-full my-5'>
+          <div className='flex flex-row justify-center lg:justify-start w-full my-5'>
             {projects[currentProject]?.projectLanguages?.map(
               (language, index) => (
                 <span
@@ -103,7 +103,7 @@ const Work = ({ work }) => {
           </div>
         </AnimationOnScroll>
         <AnimationOnScroll animateIn='animate__slideInRight'>
-          <div className='flex flex-row justify-start w-full'>
+          <div className='flex flex-row justify-center lg:justify-start w-full'>
             {projects[currentProject]?.projectLinks?.map((link, index) => (
               <span key={index}>
                 {link?.name === 'Github' ? (

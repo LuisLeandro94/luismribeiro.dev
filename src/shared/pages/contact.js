@@ -13,21 +13,27 @@ const Contact = ({
 }) => {
   return (
     <div
-      className='h-screen w-full py-40 px-40 flex flex-row justify-center align-middle select-none bg-pattern'
+      className='lg:h-screen w-full p-10 lg:py-40 lg:px-40 flex flex-row justify-center align-middle select-none bg-pattern'
       ref={contacts}>
       <AnimationOnScroll animateIn='animate__fadeInUp' className='w-full'>
-        <div className='w-full bg-white flex flex-row justify-center align-middle text-center items-center h-full'>
-          <div className='w-1/2 p-10 text-start text-semibold text-neutral-500 text-5xl'>
-            <AnimationOnScroll animateIn='animate__backInLeft'>
+        <div className='w-full bg-white flex flex-col lg:flex-row justify-center align-middle text-center items-center h-full'>
+          <div className=' w-full lg:w-1/2 p-10 text-start text-semibold text-neutral-500 text-5xl'>
+            <AnimationOnScroll
+              animateIn='animate__backInLeft'
+              className='text-center lg:text-start'>
               <p>Get in touch.</p>
             </AnimationOnScroll>
-            <AnimationOnScroll animateIn='animate__backInLeft'>
+            <AnimationOnScroll
+              animateIn='animate__backInLeft'
+              className='text-center lg:text-start'>
               <p>I would like to hear from you.</p>
             </AnimationOnScroll>
           </div>
-          <div className='w-1/2 p-10 flex flex-col justify-start text-start'>
+          <div className='w-full lg:w-1/2 p-10 flex flex-col justify-start text-start'>
             <AnimationOnScroll animateIn='animate__backInDown'>
-              <p className='text-3xl text-teal-600 text-bold'>Get in Touch</p>
+              <p className='text-3xl text-teal-600 text-bold text-center lg:text-start'>
+                Get in Touch
+              </p>
             </AnimationOnScroll>
             <div>
               <ContactForm

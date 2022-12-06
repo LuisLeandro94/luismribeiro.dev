@@ -9,10 +9,10 @@ const Home = ({ home }) => {
   return (
     <>
       <div
-        className='h-screen w-full py-20 px-5 lg:px-32 flex flex-col justify-center'
+        className='h-screen w-full py-20 px-5 lg:px-32 flex flex-col justify-center lg:items-start items-center'
         ref={home}>
         <Logo />
-        <p className='px-0 text-white text-2xl py-0 pt-3 demo-typewriter'>
+        <p className='px-0 text-white text-xl lg:text-2xl py-0 pt-3 demo-typewriter'>
           <span>Junior Fullstack Developer</span>
         </p>
         <ul className='list-none flex flex-row justify-start pt-8 pb-5'>
@@ -20,7 +20,7 @@ const Home = ({ home }) => {
             href='https://github.com/LuisLeandro94'
             rel='noopener noreferrer'
             target='_blank'
-            className='px-2 icon'>
+            className='pr-2 icon'>
             <Github />
           </a>
           <a

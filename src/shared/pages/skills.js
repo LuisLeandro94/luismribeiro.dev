@@ -7,8 +7,8 @@ import { SkillList } from '../components/Static/skillList';
 const Skills = ({ skills }) => {
   return (
     <div ref={skills}>
-      <div className='h-screen w-full py-20 px-32 flex flex-row justify-center align-middle'>
-        <div className='flex flex-col p-6 w-1/2 justify-center'>
+      <div className='lg:h-screen w-full items-center py-20 px-5 lg:px-32 flex flex-col lg:flex-row justify-center align-middle'>
+        <div className='flex flex-col p-6 w-full lg:w-1/2 justify-center order-2 lg:order-1 text-center lg:text-start'>
           <AnimationOnScroll animateIn='animate__slideInLeft'>
             <h2 className='text-3xl text-teal-600 font-bold'>Skills</h2>
           </AnimationOnScroll>
@@ -34,11 +34,11 @@ const Skills = ({ skills }) => {
             ))}
           </div>
         </div>
-        <div className='w-1/2'>
+        <div className='w-full lg:w-1/2 order-1 lg:order-2'>
           <AnimationOnScroll
             animateIn='animate__slideInRight'
             className='h-full'>
-            <div className='bg-dots h-full p-4 bg-100 bg-no-repeat mr-none w-4/5'>
+            <div className='bg-dots h-full p-4 bg-100 bg-no-repeat mr-none w-full lg:w-4/5'>
               <div className='w-full h-full m-0 p-0 clip-right flex justify-center items-center overflow-hidden'>
                 <img
                   src={Image}
