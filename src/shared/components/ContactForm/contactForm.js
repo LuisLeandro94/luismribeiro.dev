@@ -1,5 +1,6 @@
 import emailjs from 'emailjs-com';
 import React, { useState } from 'react';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { validate } from '../../helpers/helper';
 import Alert from '../Alert/alert';
 import Button from '../Button/button';
@@ -64,10 +65,18 @@ const ContactForm = ({
 
   return (
     <form onSubmit={onSubmit}>
-      <Input id='name' type='text' placeholder='Name' />
-      <Input id='email' type='text' placeholder='Email' />
-      <TextArea id='message' placeholder='Message' />
-      <Button text='Send Message' type='submit' inverted />
+      <AnimationOnScroll animateIn='animate__backInRight'>
+        <Input id='name' type='text' placeholder='Name' />
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn='animate__backInRight'>
+        <Input id='email' type='text' placeholder='Email' />
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn='animate__backInRight'>
+        <TextArea id='message' placeholder='Message' />
+      </AnimationOnScroll>
+      <AnimationOnScroll animateIn='animate__backInUp'>
+        <Button text='Send Message' type='submit' inverted />
+      </AnimationOnScroll>
     </form>
   );
 };

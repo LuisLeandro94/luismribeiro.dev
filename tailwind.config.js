@@ -5,8 +5,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         pattern:
-          "url('/src/shared/assets/pattern_geometric-5_1_7_0-0_100_1__fdfffc_363636.png')",
-        dots: "url('/src/shared/assets/download.png')",
+          "url('/src/shared/assets/pattern_geometric-5_1_7_0-0_100_1__fdfffc_363636.webp')",
+        dots: "url('/src/shared/assets/download.webp')",
       },
       backgroundSize: {
         100: '100px',

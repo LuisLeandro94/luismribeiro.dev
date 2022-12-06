@@ -10,7 +10,7 @@ const Logo = () => {
       viewBox='0 0 262.561 30.872'>
       <g transform='translate(-63.65 -105.684)'>
         <g
-          ariaLabel='LUIS RIBEIRO'
+          aria-label='LUIS RIBEIRO'
           style={{}}
           fill='#fff'
           stroke='#000'

@@ -35,7 +35,7 @@ export const Projects = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
     languages: ['HTML5', 'CSS', 'JS'],
     links: [{ title: 'Github', url: '/' }],
-    image: '../../assets/IMG_0232.JPG.png',
+    image: '../../assets/luis_photo.webp',
   },
   {
     name: 'Website5',
@@ -43,6 +43,6 @@ export const Projects = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
     languages: ['HTML5', 'CSS', 'JS'],
     links: [{ title: 'Github', url: '/' }],
-    image: '../../assets/IMG_0232.JPG.png',
+    image: '../../assets/luis_photo.webp',
   },
 ];
