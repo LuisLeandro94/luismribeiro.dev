@@ -7,7 +7,7 @@ const Alert = ({ title, text, setShowAlert }) => {
     if (title === 'Error') {
       setError(true);
     }
-  }, []);
+  }, [title]);
 
   return (
     <div

@@ -14,8 +14,7 @@ const Skills = ({ skills }) => {
           </AnimationOnScroll>
           <AnimationOnScroll animateIn='animate__slideInLeft'>
             <p className='text-lg text-white pt-4 font-normal'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              I enjoy creating things, wether that be websites or applications.
             </p>
           </AnimationOnScroll>
           <div className='grid-container grid grid-cols-4 gap-4 my-5'>
@@ -43,7 +42,7 @@ const Skills = ({ skills }) => {
                 <img
                   src={Image}
                   alt='Luis Ribeiro'
-                  className='min-w-full min-h-full shrink-0 object-cover'
+                  className='w-full h-full min-w-full min-h-full shrink-0 object-cover'
                 />
               </div>
             </div>

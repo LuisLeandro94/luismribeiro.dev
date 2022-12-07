@@ -15,7 +15,7 @@ const About = ({ about }) => {
               <img
                 src={Image}
                 alt='Luis Ribeiro'
-                className='min-w-full min-h-full shrink-0 object-cover'
+                className='h-full w-full min-w-full min-h-full shrink-0 object-cover'
               />
             </div>
           </div>
@@ -27,13 +27,15 @@ const About = ({ about }) => {
         </AnimationOnScroll>
         <AnimationOnScroll animateIn='animate__fadeInRight'>
           <p className='text-lg text-white pt-4 font-normal'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Since a very young age, I've always loved technology and, in
+            particular computers. I've always dreamt about learning how the
+            magic box worked. Now, I was finally able to pursue my dream and
+            become a developer. I enrolled in a Web Development and Multimedia
+            course @IPCA in 2020 and started working on side projects to sharpen
+            my skills. <br /> Today, I am a Fullstack Developer, working with
+            React, SQL, .Net, and a lot more technologies. I'm always on the
+            hunt for new things to learn and new experiences that can develop me
+            as a person and make me a better developer.
           </p>
         </AnimationOnScroll>
         <AnimationOnScroll animateIn='animate__fadeInRight'>

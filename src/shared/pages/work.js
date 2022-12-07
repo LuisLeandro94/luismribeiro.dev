@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
-import {
-  AiFillGithub,
-  AiOutlineArrowLeft,
-  AiOutlineArrowRight,
-} from 'react-icons/ai';
-import { TbWorld } from 'react-icons/tb';
 import sanityClient from '../../client';
+import ArrowLeft from '../components/Static/ArrowLeft';
+import ArrowRight from '../components/Static/ArrowRight';
+import Github from '../components/Static/Github';
+import World from '../components/Static/World';
 
 const Work = ({ work }) => {
   const [currentProject, setCurrentProject] = useState(0);
@@ -45,7 +43,7 @@ const Work = ({ work }) => {
               <img
                 src={projects[currentProject]?.projectImage?.asset?.url}
                 alt='Luis Ribeiro'
-                className='min-w-full min-h-full shrink-0 object-cover'
+                className='w-full h-full min-w-full min-h-full shrink-0 object-cover'
               />
               <div
                 className={
@@ -54,19 +52,17 @@ const Work = ({ work }) => {
                     : 'absolute w-full lg:w-10/12 h-full top-0 flex justify-between align-middle text-center items-center p-4 '
                 }>
                 {currentProject !== 0 && (
-                  <span className='w-1/6 text-center align-middle justify-center items-center flex right-0 bg-neutral-500 cursor-pointer'>
-                    <AiOutlineArrowLeft
-                      onClick={() => setCurrentProject(currentProject - 1)}
-                      className='text-5xl text-teal-500 m-2'
-                    />
+                  <span
+                    className='w-1/6 text-center align-middle justify-center items-center flex right-0 bg-neutral-500 cursor-pointer arrow'
+                    onClick={() => setCurrentProject(currentProject - 1)}>
+                    <ArrowLeft />
                   </span>
                 )}
                 {currentProject !== projects?.length - 1 && (
-                  <span className='w-1/6 text-center align-middle justify-center items-center flex right-0 bg-neutral-500 cursor-pointer'>
-                    <AiOutlineArrowRight
-                      onClick={() => setCurrentProject(currentProject + 1)}
-                      className='text-5xl text-teal-500 m-2'
-                    />
+                  <span
+                    className='w-1/6 text-center align-middle justify-center items-center flex right-0 bg-neutral-500 cursor-pointer arrow'
+                    onClick={() => setCurrentProject(currentProject + 1)}>
+                    <ArrowRight />
                   </span>
                 )}
               </div>
@@ -108,15 +104,17 @@ const Work = ({ work }) => {
               <span key={index}>
                 {link?.name === 'Github' ? (
                   <a
+                    aria-label={link?.name}
                     href={link?.url}
                     rel='noopener noreferrer'
                     target='_blank'
-                    key={index}>
-                    <AiFillGithub className='text-4xl text-neutral-500 hover:text-neutral-800 transition-colors duration-300' />
+                    key={index}
+                    className='gitHub'>
+                    <Github className='text-4xl text-neutral-500 hover:text-neutral-800 transition-colors duration-300' />
                   </a>
                 ) : (
-                  <a href={link?.url}>
-                    <TbWorld className='text-4xl text-neutral-500 hover:text-neutral-800 transition-colors duration-300' />
+                  <a href={link?.url} aria-label={link?.name}>
+                    <World className='text-4xl text-neutral-500 hover:text-neutral-800 transition-colors duration-300' />
                   </a>
                 )}
               </span>

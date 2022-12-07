@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import ContactForm from '../components/ContactForm/contactForm';
 

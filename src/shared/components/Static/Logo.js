@@ -10,9 +10,10 @@ const Logo = () => {
       viewBox='0 0 262.561 30.872'>
       <g transform='translate(-63.65 -105.684)'>
         <g
-          aria-label='LUIS RIBEIRO'
+          aria-label='svg'
           style={{}}
           fill='#fff'
+          role='graphics-document'
           stroke='#000'
           strokeWidth='0.265'
           fontFamily='NEON LED Light'

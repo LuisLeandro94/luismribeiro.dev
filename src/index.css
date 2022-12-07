@@ -64,3 +64,17 @@ body {
 .arrowUp > svg {
   fill: #0E9488;
 }
+
+.arrow > svg {
+  fill: #0E9488;
+  width: 70%;
+}
+
+.gitHub > svg {
+  fill: #525252;
+}
+
+.gitHub:hover > svg {
+  fill: #0E9488;
+  transition: all .3s linear;
+}
